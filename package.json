@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "pretest": "tsc --noEmit && eslint .",
-    "test": "npx playwright test"
+    "pretest": "npx tsc --noEmit && eslint .",
+    "test": "npx playwright test",
+    "test:headed": "npm run test -- --headed"
   },
   "keywords": [],
   "author": "",
