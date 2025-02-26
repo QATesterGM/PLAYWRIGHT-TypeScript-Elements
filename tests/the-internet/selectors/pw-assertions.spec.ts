@@ -6,7 +6,7 @@ test.describe('The Internet - locators', () => {
     await expect(page).toHaveTitle(/Internet/);
   });
 
-  test('find by role', async ({ page }) => {
+  test('pw assertions', async ({ page }) => {
     const usernameInput = page.getByLabel('Username');
     const passwordInput = page.getByLabel('Password');
     const loginButton = page.getByRole('button', { name: 'Login' });
@@ -15,6 +15,7 @@ test.describe('The Internet - locators', () => {
     await passwordInput.fill('password');
     await loginButton.click();
 
-    await expect(page.getByText('Your username is invalid!')).toBeVisible();
+    await expect(page.locator('#flash')).toContainText('Your username is invalid!');
+    await expect(page.locator('#flash')).toHaveClass('flash error');
   });
 });

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call */
 import { expect, test } from '@playwright/test';
 
 test.describe('The Internet - locators', () => {
