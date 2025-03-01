@@ -7,7 +7,7 @@ test.describe('The Internet - debug', () => {
     await expect(page).toHaveTitle(/Internet/);
   });
 
-  test('pw debug mode', async ({ page }) => {
+  test('pw debug mode', {tag: '@unstable' }, async ({ page }) => {
     // Arrange
     const username = getRandomName();
     const password = getRandomPassword();
