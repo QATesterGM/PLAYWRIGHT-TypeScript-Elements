@@ -1,5 +1,5 @@
 {
-"files.autoSave": "afterDelay",
+  "files.autoSave": "afterDelay",
   "editor.tabSize": 4,
   "editor.detectIndentation": true,
   "editor.formatOnSave": true,
@@ -17,5 +17,6 @@
   "[typescript]": {
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "cSpell.words": ["pwts"]
 }

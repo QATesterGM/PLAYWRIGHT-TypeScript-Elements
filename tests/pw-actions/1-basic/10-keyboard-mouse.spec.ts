@@ -18,7 +18,9 @@ test.describe('Basic examples', () => {
     // dialog handler
     // page.on('dialog', (dialog) => page.waitForTimeout(1000).then(() => dialog.accept()));
 
-    await page.mouse.click(250, 250, { button: 'right' });
+    await page.mouse.click(250, 250, { button: 'right' }); // nierekomendowane
+
+    await page.locator('#hot-spot').click({button: 'right'}); //lepszy sposob
 
     await expect(page).toHaveTitle(/The Internet/);
   });
