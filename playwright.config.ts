@@ -10,6 +10,7 @@ export default defineConfig({
   use: {
     baseURL: 'https://the-internet.herokuapp.com',
     trace: 'on',
+    video: 'off',
   },
   projects: [
     {
