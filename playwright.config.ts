@@ -1,4 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
+import path from 'path';
+
+export const ADMIN_LOGIN_SESSION = path.join(__dirname, 'tmp/admin-login-session.json');
+export const USER_LOGIN_SESSION = path.join(__dirname, 'tmp/user-login-session.json');
 
 export default defineConfig({
   testDir: './tests',
